@@ -1,5 +1,4 @@
 import 'package:assignment_project/models/contact_model.dart';
-import 'package:assignment_project/screens/components/showMessage.dart';
 import 'package:assignment_project/services/contact_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
@@ -44,11 +43,9 @@ class ContactController extends GetxController {
       });
     }
     contactList.refresh();
-    print("Data is ${contactList.length}");
   }
 
   Future<void> updateContact(ContactModel contactModel) async {
-    print("Update Called");
     int index = contactList.value
         .indexWhere((element) => element.id == contactModel.id);
     contactList.value.removeAt(index);

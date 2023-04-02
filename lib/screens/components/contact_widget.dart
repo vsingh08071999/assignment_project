@@ -75,7 +75,6 @@ class _ContactWidgetState extends State<ContactWidget> {
             )
           ],
         ),
-        // subtitle:
       ),
     );
   }

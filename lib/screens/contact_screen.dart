@@ -34,7 +34,6 @@ class _ContactScreenState extends State<ContactScreen> {
   fillData() {
     if (widget.contactModel != null) {
       _contactController.contactModel.value = widget.contactModel!;
-      print("fill data ${_contactController.contactModel.value.toJson()}");
       _name.text = widget.contactModel!.name;
       _number.text = widget.contactModel!.number;
     } else {
